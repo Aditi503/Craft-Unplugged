@@ -1,0 +1,183 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #f4dddd;
+}
+.nav-item{
+    font-family: serif;
+    letter-spacing: 1%;
+    font-size: 25px;
+}
+.nav-item a.active {
+  background-color: cyan;
+  color: white;
+}
+@media screen and (max-width: 900px){
+  .nav-item{
+    margin-right: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 20px;
+  color: white;
+}
+.text{
+   min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(logo.jpg);
+    background-position: center;
+    background-size:cover ;
+    position: relative;
+    display: flex;
+    margin-top: 2%;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    max-width: 90%;
+    margin: auto;
+    padding: 1.5rem;
+}
+@media screen and (max-width: 700px)
+{
+    #grid{
+    grid-template-columns: 1fr;
+    }
+}
+.card{
+    background-color: transparent;
+}
+.about h1{
+    font-weight: 600;
+    font-size: 50px;
+    font-family: serif;
+    text-align: left;
+    border-left: 9px solid #fff;
+}
+.about h3{
+    font-size: 20px;
+}
+.about p{
+    font-size: 20px;
+    text-align: left;
+}
+.about i{
+    font-size: 30px;
+}
+
+.footer{
+  margin-top: 2%;
+  background-color: #24262b;
+  width: 100%;
+  text-align: center;
+  padding: 70px 0;
+}
+.footer-col .social-link a{
+  display: inline-block;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0 10px 10px 0;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.footer-col .social-link a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+  padding-left: 10px;
+}
+.footer-col h3{
+  margin-bottom: 25px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.icons .fa{
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.navbar-brand h1 {
+  font-size: calc(10px + 5vh);
+  line-height: calc(10px + 10vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+.navbar-brand {
+  padding: 1%;
+  display: contents;
+  justify-content: left;
+  align-items: left;
+  height: 10px;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+.about{
+  opacity: 0;
+}
+.about.animated{
+  opacity: 1;
+}
